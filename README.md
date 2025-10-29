@@ -12,19 +12,24 @@ The Detailed table will include the following fields: rental_total(INT), staff_i
 The Summary table will include the following fields: rental_total(INT), rental_month(INT), rental_year(INT)
 
 2.  Describe the types of data fields used for the report.
+3.  
 Integer for the whole numbers associated with the rental total, employee IDs, and the date. With VARCHAR for where the movies were rented from. I will also have it separated by the month and year which will be expressed as integers.
 
-3.  Identify at least two specific tables from the given dataset that will provide the data necessary for the detailed table section and the summary table section of the report.
+4.  Identify at least two specific tables from the given dataset that will provide the data necessary for the detailed table section and the summary table section of the report.
+
 For the detailed and summary tables I will be pulling data from the Rental and Address tables.
 
 4.  Identify at least one field in the detailed table section that will require a custom transformation with a user-defined function and explain why it should be transformed (e.g., you might translate a field with a value of N to No and Y to Yes).
+5.  
 I will create two transformations for changing the date which is a timestamp into a month and year. Which I can then display in my created tables.
 
-5.  Explain the different business uses of the detailed table section and the summary table section of the report. 
+6.  Explain the different business uses of the detailed table section and the summary table section of the report.
+7.  
 The summary table can be used for an easy side by side comparison for the company as a whole to see the total rental amount.
 The detailed table would be good to understand where more rentals are being purchased. If a certain staff member or rental location is doing better than others, they can then be studied to understand why they might be more effective.
 
-6.  Explain how frequently your report should be refreshed to remain relevant to stakeholders.
+8.  Explain how frequently your report should be refreshed to remain relevant to stakeholders.
+9.  
 It should be regularly refreshed each month. You can use it every week which was my first thought but to get a complete understanding on how the stores perform it’d need to be run every month.. Due to location and a number of variable factors a store could do better one week than another.  Thus it is better to wait the whole month to compare data.
  
 B.  Provide original code for function(s) in text format that perform the transformation(s) you identified in part A4.
